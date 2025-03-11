@@ -4,9 +4,12 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-[7.2rem]">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -42,31 +45,57 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </p>
-
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
            *  change md:text-6xl, add more responsive code
            */}
+
+          {/* Social Icons */}
+          <div className="flex gap-6 mb-6">
+            <a
+              href="https://github.com/nurhuda0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-3xl md:text-4xl text-gray-800 dark:text-white hover:scale-110 transition-transform duration-200" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/arkanur/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-3xl md:text-4xl text-blue-600 hover:scale-110 transition-transform duration-200" />
+            </a>
+            <a href="mailto:zerobizzz@gmail.com">
+              <MdEmail className="text-3xl md:text-4xl text-white hover:scale-110 transition-transform duration-200" />
+            </a>
+          </div>
+
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words={
+              "Hi! I’m Arka’an Nurhuda,\n a full-stack web developer \n from Indonesia."
+            }
+            className="text-center text-[30px] md:text-5xl lg:text-6xl whitespace-pre-line"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+            I love creating websites and apps that are not only functional and
+            scalable but also a joy to use. Whether it’s solving complex
+            problems or crafting clean, elegant code, I’m all about turning
+            ideas into digital solutions that make a real impact.
           </p>
-
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Check Out My Work"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
+          <br></br>
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            This website was created with Next.js and Tailwind CSS
+          </p>
         </div>
       </div>
     </div>
