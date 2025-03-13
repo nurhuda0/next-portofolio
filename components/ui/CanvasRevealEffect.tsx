@@ -309,26 +309,16 @@
 
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useState } from "react";
+import React from "react";
 
 export const CanvasRevealEffect = ({
   containerClassName,
-  hoverColor = "#4605a6", // Default hover color (cyan)
 }: {
   containerClassName?: string;
-  hoverColor?: string; // Custom hover color
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div
       className={cn("h-full relative bg-#2e046b w-full", containerClassName)}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{
-        backgroundColor: isHovered ? hoverColor : "#2e046b", // Change background color on hover
-        transition: "background-color 0.3s ease", // Smooth transition
-      }}
     >
       {/* Optional: Add any other content here */}
     </div>
