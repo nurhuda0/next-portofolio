@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Add this line
 
 import * as Sentry from "@sentry/nextjs";
 import Error from "next/error";
@@ -12,7 +12,7 @@ export default function GlobalError({ error }) {
   return (
     <html>
       <body>
-        <Error />
+        {/* Your Error component here... */}
       </body>
     </html>
   );
