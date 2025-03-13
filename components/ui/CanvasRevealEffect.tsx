@@ -6,7 +6,7 @@ import * as THREE from "three";
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
-  opacities = [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1],
+  opacities = [0.3, 0.5, 0.8, 1],
   colors = [[0, 255, 255]],
   containerClassName,
   dotSize,
@@ -59,9 +59,9 @@ interface DotMatrixProps {
 
 const DotMatrix: React.FC<DotMatrixProps> = ({
   colors = [[0, 0, 0]],
-  opacities = [0.04, 0.04, 0.04, 0.04, 0.04, 0.08, 0.08, 0.08, 0.08, 0.14],
-  totalSize = 4,
-  dotSize = 2,
+  opacities = [0.3, 0.5, 0.8, 1], // Reduced opacity levels
+  totalSize = 8, // Increased spacing between dots (from 4 to 8)
+  dotSize = 2, // Smaller dot size
   shader = "",
   center = ["x", "y"],
 }) => {
@@ -170,7 +170,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
       fragColor.rgb *= fragColor.a;
         }`}
       uniforms={uniforms}
-      maxFps={60}
+      maxFps={30}
     />
   );
 };
@@ -184,7 +184,7 @@ type Uniforms = {
 const ShaderMaterial = ({
   source,
   uniforms,
-  maxFps = 60,
+  maxFps = 30,
 }: {
   source: string;
   hovered?: boolean;
@@ -289,7 +289,7 @@ const ShaderMaterial = ({
   );
 };
 
-const Shader: React.FC<ShaderProps> = ({ source, uniforms, maxFps = 60 }) => {
+const Shader: React.FC<ShaderProps> = ({ source, uniforms, maxFps = 30 }) => {
   return (
     <Canvas className="absolute inset-0  h-full w-full">
       <ShaderMaterial source={source} uniforms={uniforms} maxFps={maxFps} />
