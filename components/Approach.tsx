@@ -29,15 +29,15 @@ const Approach = () => {
           des="Once we finalize the plan, I’ll get to work transforming ideas into reality. From rough concepts to clean, functional code, I’ll keep you in the loop throughout the entire process, ensuring transparency and collaboration every step of the way."
         >
           <CanvasRevealEffect
-            animationSpeed={3}
+            // animationSpeed={3}
             // change bg-black to bg-pink-900
             containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-            colors={[
-              // change the colors of the
-              [255, 166, 158],
-              [221, 255, 247],
-            ]}
-            dotSize={2}
+            // colors={[
+            //   // change the colors of the
+            //   [255, 166, 158],
+            //   [221, 255, 247],
+            // ]}
+            // dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
           {/* remove this one */}
@@ -49,9 +49,9 @@ const Approach = () => {
           des="This is where your project comes to life! I’ll deploy your website to the web, ensuring everything runs smoothly, and provide ongoing maintenance to keep it secure, up-to-date, and performing at its best."
         >
           <CanvasRevealEffect
-            animationSpeed={3}
+            // animationSpeed={3}
             containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-            colors={[[125, 211, 252]]}
+            // colors={[[125, 211, 252]]}
           />
         </Card>
       </div>
