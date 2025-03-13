@@ -18,7 +18,7 @@ const Approach = () => {
           des="We’ll define the vision for your website by identifying its core objectives, understanding your ideal audience, and outlining essential features. We’ll dive into details like layout, user flow, and the type of content needed to bring your site to life."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            // animationSpeed={5.1}
             // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
             containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
           />
