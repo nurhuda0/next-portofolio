@@ -85,7 +85,7 @@ const Hero = () => {
             problems or crafting clean, elegant code, I’m all about turning
             ideas into digital solutions that make a real impact.
           </p>
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Check Out My Work"
               icon={<FaLocationArrow />}
