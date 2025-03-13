@@ -32,11 +32,15 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col items-center">
+        {/* Copyright Text */}
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2025 Arka&apos;an Nurhuda
         </p>
-
+        {/* Fixed-width spacer to push icons slightly to the left */}
+        <div className="w-80"></div>{" "}
+        {/* Adjust the width (e.g., w-20) as needed */}
+        {/* Social Media Icons */}
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a
@@ -50,6 +54,8 @@ const Footer = () => {
             </a>
           ))}
         </div>
+        {/* Spacer to balance the layout */}
+        <div className="flex-grow"></div>
       </div>
     </footer>
   );
