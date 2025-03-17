@@ -9,7 +9,7 @@ import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div id="about" className="pb-20 pt-[7.2rem]">
+    <div id="about" className="pb-8 pt-12">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight

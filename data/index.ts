@@ -158,32 +158,98 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
+    name: "Javascript",
+    img: "/javascript.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "HTML",
+    img: "/html.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    name: "CSS",
+    img: "/css.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "Golang",
+    img: "/golang.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
+    name: "PHP",
+    img: "/phpw.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 6,
+    name: "React Js",
+    img: "/react.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 7,
+    name: "Next Js",
+    img: "/nextjs.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 8,
+    name: "Wordpress",
+    img: "/wordpress.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 9,
+    name: "Elementor",
+    img: "/elementor.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 10,
+    name: "Git",
+    img: "/git.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 11,
+    name: "CodeIgniter",
+    img: "/codeigniter.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 12,
+    name: "Laravel",
+    img: "/laravel.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 13,
+    name: "TailwindCSS",
+    img: "/tail.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 14,
+    name: "Laragon",
+    img: "/laragon.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 15,
+    name: "VS Code",
+    img: "/vscode.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 16,
+    name: "Figma",
+    img: "/figma.svg",
     nameImg: "/dockerName.svg",
   },
 ];
@@ -227,7 +293,7 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/github.svg",
     link: "https://github.com/nurhuda0",
   },
   {
